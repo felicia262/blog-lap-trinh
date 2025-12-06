@@ -11,7 +11,6 @@ theme = 'PaperMod'
 	# Contact information
 	contact_email = 'felicia.nguyenthanh@gmail.com'
 	contact_phone = '0899923998'
-	# Profile image: place an image under `static/images/` and name it `martin_1.jpg` (or update path)
 	profileImage = 'images/martin_1.jpg'
 
 	[params.social]
