@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Blog Lập Trình Mạng - [CORTIS]</title>
+    <link>http://localhost:1313/blog-lap-trinh/tags/</link>
+    <description>Recent content in Tags on Blog Lập Trình Mạng - [CORTIS]</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>vi</language>
+    <lastBuildDate>Sun, 30 Nov 2025 13:20:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog-lap-trinh/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debugging</title>
+      <link>http://localhost:1313/blog-lap-trinh/tags/debugging/</link>
+      <pubDate>Sun, 30 Nov 2025 13:20:00 +0700</pubDate>
+      <guid>http://localhost:1313/blog-lap-trinh/tags/debugging/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Profiling</title>
+      <link>http://localhost:1313/blog-lap-trinh/tags/profiling/</link>
+      <pubDate>Sun, 30 Nov 2025 13:20:00 +0700</pubDate>
+      <guid>http://localhost:1313/blog-lap-trinh/tags/profiling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wireshark</title>
+      <link>http://localhost:1313/blog-lap-trinh/tags/wireshark/</link>
+      <pubDate>Sun, 30 Nov 2025 13:20:00 +0700</pubDate>
+      <guid>http://localhost:1313/blog-lap-trinh/tags/wireshark/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Express</title>
+      <link>http://localhost:1313/blog-lap-trinh/tags/express/</link>
+      <pubDate>Sun, 30 Nov 2025 13:10:00 +0700</pubDate>
+      <guid>http://localhost:1313/blog-lap-trinh/tags/express/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Node.js</title>
+      <link>http://localhost:1313/blog-lap-trinh/tags/node.js/</link>
+      <pubDate>Sun, 30 Nov 2025 13:10:00 +0700</pubDate>
+      <guid>http://localhost:1313/blog-lap-trinh/tags/node.js/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>REST</title>
+      <link>http://localhost:1313/blog-lap-trinh/tags/rest/</link>
+      <pubDate>Sun, 30 Nov 2025 13:10:00 +0700</pubDate>
+      <guid>http://localhost:1313/blog-lap-trinh/tags/rest/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Realtime</title>
+      <link>http://localhost:1313/blog-lap-trinh/tags/realtime/</link>
+      <pubDate>Sun, 30 Nov 2025 13:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/blog-lap-trinh/tags/realtime/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>WebSocket</title>
+      <link>http://localhost:1313/blog-lap-trinh/tags/websocket/</link>
+      <pubDate>Sun, 30 Nov 2025 13:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/blog-lap-trinh/tags/websocket/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fetch</title>
+      <link>http://localhost:1313/blog-lap-trinh/tags/fetch/</link>
+      <pubDate>Sun, 30 Nov 2025 12:50:00 +0700</pubDate>
+      <guid>http://localhost:1313/blog-lap-trinh/tags/fetch/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JavaScript</title>
+      <link>http://localhost:1313/blog-lap-trinh/tags/javascript/</link>
+      <pubDate>Sun, 30 Nov 2025 12:50:00 +0700</pubDate>
+      <guid>http://localhost:1313/blog-lap-trinh/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bảo Mật</title>
+      <link>http://localhost:1313/blog-lap-trinh/tags/b%E1%BA%A3o-m%E1%BA%ADt/</link>
+      <pubDate>Sun, 30 Nov 2025 12:40:00 +0700</pubDate>
+      <guid>http://localhost:1313/blog-lap-trinh/tags/b%E1%BA%A3o-m%E1%BA%ADt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Java</title>
+      <link>http://localhost:1313/blog-lap-trinh/tags/java/</link>
+      <pubDate>Sun, 30 Nov 2025 12:40:00 +0700</pubDate>
+      <guid>http://localhost:1313/blog-lap-trinh/tags/java/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SSL</title>
+      <link>http://localhost:1313/blog-lap-trinh/tags/ssl/</link>
+      <pubDate>Sun, 30 Nov 2025 12:40:00 +0700</pubDate>
+      <guid>http://localhost:1313/blog-lap-trinh/tags/ssl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TLS</title>
+      <link>http://localhost:1313/blog-lap-trinh/tags/tls/</link>
+      <pubDate>Sun, 30 Nov 2025 12:40:00 +0700</pubDate>
+      <guid>http://localhost:1313/blog-lap-trinh/tags/tls/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HTTP</title>
+      <link>http://localhost:1313/blog-lap-trinh/tags/http/</link>
+      <pubDate>Sun, 30 Nov 2025 12:30:00 +0700</pubDate>
+      <guid>http://localhost:1313/blog-lap-trinh/tags/http/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HttpClient</title>
+      <link>http://localhost:1313/blog-lap-trinh/tags/httpclient/</link>
+      <pubDate>Sun, 30 Nov 2025 12:30:00 +0700</pubDate>
+      <guid>http://localhost:1313/blog-lap-trinh/tags/httpclient/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ExecutorService</title>
+      <link>http://localhost:1313/blog-lap-trinh/tags/executorservice/</link>
+      <pubDate>Sun, 30 Nov 2025 12:20:00 +0700</pubDate>
+      <guid>http://localhost:1313/blog-lap-trinh/tags/executorservice/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Thread</title>
+      <link>http://localhost:1313/blog-lap-trinh/tags/thread/</link>
+      <pubDate>Sun, 30 Nov 2025 12:20:00 +0700</pubDate>
+      <guid>http://localhost:1313/blog-lap-trinh/tags/thread/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Socket</title>
+      <link>http://localhost:1313/blog-lap-trinh/tags/socket/</link>
+      <pubDate>Sun, 30 Nov 2025 12:10:00 +0700</pubDate>
+      <guid>http://localhost:1313/blog-lap-trinh/tags/socket/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TCP</title>
+      <link>http://localhost:1313/blog-lap-trinh/tags/tcp/</link>
+      <pubDate>Sun, 30 Nov 2025 12:10:00 +0700</pubDate>
+      <guid>http://localhost:1313/blog-lap-trinh/tags/tcp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mạng</title>
+      <link>http://localhost:1313/blog-lap-trinh/tags/m%E1%BA%A1ng/</link>
+      <pubDate>Sun, 30 Nov 2025 12:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/blog-lap-trinh/tags/m%E1%BA%A1ng/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

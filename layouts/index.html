@@ -1,0 +1,44 @@
+{{ define "main" }}
+  <main class="main">
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Blog Lập Trình Mạng</h1>
+        <p class="lead">Chia sẻ kiến thức và thực hành về Java, JavaScript và lập trình mạng — bài tập, ví dụ và hướng dẫn từ các khoá học.</p>
+      </div>
+      <div class="hero-image">
+        {{ with .Site.Params.profileImage }}
+          <img src="{{ . | relURL }}" alt="Ảnh đại diện" />
+        {{ end }}
+      </div>
+    </div>
+
+    {{ .Content }}
+
+    <section class="latest-posts">
+      <h2>Bài viết mới</h2>
+      <ul>
+        {{ $pages := where .Site.RegularPages "Section" "posts" }}
+        {{ range first 3 (sort $pages "Date" "desc") }}
+          {{ $p := . }}
+          <li class="post-item">
+            {{ with $p.Params.featureImage }}
+              <a href="{{ $p.RelPermalink }}"><img src="{{ . | relURL }}" alt="{{ $p.Title }}" class="thumb" /></a>
+            {{ end }}
+            <div class="post-meta">
+              <a class="post-title" href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>
+              <div class="post-date">{{ $p.Date.Format "02 Jan 2006" }}</div>
+              <div class="post-summary">
+                {{ if $p.Summary }}
+                  {{ $p.Summary }}
+                {{ else if $p.Params.description }}
+                  {{ $p.Params.description }}
+                {{ end }}
+              </div>
+            </div>
+          </li>
+        {{ end }}
+      </ul>
+      <p><a href="{{ "/blog-lap-trinh/posts/" | relURL }}">Xem tất cả bài viết</a></p>
+    </section>
+  </main>
+{{ end }}

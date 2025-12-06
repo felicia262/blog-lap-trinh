@@ -1,0 +1,20 @@
+<!-- Extend head: load Google Fonts and add Open Graph / Twitter meta tags -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+{{ $title := .Title }}
+{{ if not $title }}{{ $title = .Site.Title }}{{ end }}
+
+{{ $desc := cond (isset .Params "description") .Params.description .Site.Params.description }}
+{{ $image := cond (isset .Params "featureImage") (printf "%s" .Params.featureImage) .Site.Params.profileImage }}
+{{ if $image }}
+  {{ $image = $image | relURL }}
+{{ end }}
+
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:description" content="{{ $desc }}" />
+{{ if $image }}<meta property="og:image" content="{{ $image }}" />{{ end }}
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $title }}" />
+<meta name="twitter:description" content="{{ $desc }}" />
+{{ if $image }}<meta name="twitter:image" content="{{ $image }}" />{{ end }}
