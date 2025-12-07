@@ -58,14 +58,60 @@ draft: false
   <h2>Gửi tin nhắn</h2>
   <p>Gửi email trực tiếp hoặc dùng form dưới đây:</p>
 
-  <form class="simple-form" method="POST">
-    <input type="text" name="name" placeholder="Name *" required />
-    <input type="email" name="email" placeholder="Email *" required />
-    <input type="text" name="subject" placeholder="Subject" />
-    <textarea name="message" rows="8" placeholder="Message"></textarea>
+  <!-- EmailJS client-only contact form -->
+  <!-- Quick setup: sign up at https://www.emailjs.com, create a Service (SMTP/Gmail),
+      create a Template and set the recipient (To) to felicia.nguyenthanh@gmail.com.
+      Then copy your EmailJS User ID, Service ID and Template ID into the placeholders below. -->
+  <form id="contact-form" class="simple-form">
+    <input id="name" type="text" name="name" placeholder="Name *" required />
+    <input id="email" type="email" name="email" placeholder="Email *" required />
+    <input id="subject" type="text" name="subject" placeholder="Subject" />
+    <textarea id="message" name="message" rows="8" placeholder="Message"></textarea>
 
-<button type="submit" class="send-btn">Send</button>
-</form>
+  <button type="submit" class="send-btn">Send</button>
+    <div id="form-status" aria-live="polite" style="margin-top:12px;color:#0b1220"></div>
+  </form>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+  (function(){
+    // Replace these placeholders with your EmailJS IDs
+    const EMAILJS_USER_ID = '2cDegeb190Y33NKBE';
+    const EMAILJS_SERVICE_ID = 'service_twgkyqo';
+    const EMAILJS_TEMPLATE_ID = 'template_nhmey4n';
+
+    // Initialize EmailJS (public key / user id)
+    try { emailjs.init(EMAILJS_USER_ID); } catch(e) { console.warn('emailjs.init:', e); }
+
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+
+    form.addEventListener('submit', function(ev){
+      ev.preventDefault();
+      status.style.color = '#0b1220';
+      status.textContent = 'Đang gửi...';
+
+      // Use sendForm so EmailJS reads inputs by name directly
+      emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, '#contact-form')
+        .then(function(response) {
+          status.style.color = '#1f7a6c';
+          status.textContent = 'Cảm ơn! Tin nhắn đã được gửi.';
+          form.reset();
+        })
+        .catch(function(error) {
+          console.error('EmailJS error:', error);
+          let msg = 'Gửi thất bại. Vui lòng thử lại hoặc gửi email tới felicia.nguyenthanh@gmail.com';
+          try {
+            if (error && error.status) msg += ' — status: ' + error.status;
+            if (error && error.text) msg += ' — ' + error.text;
+            if (error && error.message) msg += ' — ' + error.message;
+          } catch(e){}
+          status.style.color = '#c53030';
+          status.textContent = msg;
+        });
+    });
+  })();
+  </script>
 </div>
 
 
