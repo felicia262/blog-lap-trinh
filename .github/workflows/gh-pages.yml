@@ -4,6 +4,10 @@ on:
   push:
     branches: [ main ]
 
+# Give the workflow explicit permission to write repository contents (needed to push gh-pages)
+permissions:
+  contents: write
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -26,3 +30,4 @@ jobs:
           publish_dir: ./public
           publish_branch: gh-pages
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          force_orphan: true
